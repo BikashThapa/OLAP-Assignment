@@ -6,5 +6,5 @@ CREATE TABLE dim_date(
 					hire_date DATE NOT NULL,
 					terminated_date DATE NOT NULL,
 					dob DATE NOT NULL,
-					CONSTRAINT date_id PRIMARY KEY(date_id)
+					CONSTRAINT pk_date_id PRIMARY KEY(date_id)
 );

@@ -1,14 +1,12 @@
-CREATE TABLE fact_employee (
-                            emp_id SERIAL,
-                            employee_id INTEGER ,
-                            department_id INTEGER,
-                            date_id INTEGER ,
-                            salary INTEGER NOT NULL,
-                            fte FLOAT(1) NOT NULL,
-                            hours_worked INTEGER NOT NULL,
-                            CONSTRAINT pk_emp_id PRIMARY KEY(emp_id),
-                            CONSTRAINT fk_employee_id FOREIGN KEY(employee_id) REFERENCES dim_employee(employee_id),
-                            CONSTRAINT fk_department_id FOREIGN KEY(department_id) REFERENCES dim_department(department_id),
-                            CONSTRAINT fk_date_id FOREIGN KEY(date_id) REFERENCES dim_date(date_id),
-                            CONSTRAINT chck_fte CHECK (fte >=0 AND fte <=1)
+CREATE TABLE dim_employee (
+                            employee_id SERIAL ,
+                            first_name VARCHAR(30) NOT NULL,
+                            last_name VARCHAR(30) NOT NULL,
+                            location VARCHAR(15) NOT NULL,
+                            employee_role VARCHAR(50),
+                            manager_role_id NUMERIC(7),
+                            cost_center NUMERIC (5) NOT NULL,
+                            paycode VARCHAR(7) NOT NULL,
+                            CONSTRAINT pk_employee_id PRIMARY KEY(employee_id),
+                            
 );
