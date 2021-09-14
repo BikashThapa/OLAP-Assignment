@@ -14,7 +14,7 @@ Kathmandu, Pokhara and Hetauda. The dimension tables are made
 accordingly to their domains like date is allocated to dimDate where all
 dates fields are stored and employee data are stored in dimEmployee.
 
-![](.//media/image1.jpeg){width="6.5in" height="4.576388888888889in"}
+![](.//media/image1.jpeg)
 
 Figure 1: Logical Representation of Health Care System
 
@@ -37,7 +37,7 @@ Database Engine: PostgreSQL
 
 Database Name : healthCareSystem
 
-![](.//media/image2.jpeg){width="6.5in" height="3.8048611111111112in"}
+![](.//media/image2.jpeg)
 
 Figure 2: physical Implementation of Health Care System.
 
