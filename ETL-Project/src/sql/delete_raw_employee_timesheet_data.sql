@@ -1,1 +1,1 @@
-DELETE FROM raw_employee_timesheet;
+DELETE FROM {raw_employee_timesheet};
