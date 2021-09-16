@@ -1,0 +1,2 @@
+INSERT INTO sales_data (user_id,username ,product_id ,product_name, category_id,category_name, current_price ,sold_price ,sold_quantity, remainig_quantity,sales_date)
+VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s);

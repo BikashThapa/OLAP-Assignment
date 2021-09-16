@@ -7,6 +7,13 @@ def connect():
                                 port=5432,
                                 database="healthCareSystem")
 
+def connect1():
+    return psycopg2.connect(user="postgres",
+                                password="root2021",
+                                host="localhost",
+                                port=5432,
+                                database="testEcommercce")
+
 
 def delete_records(file_path):
     connection = connect()
